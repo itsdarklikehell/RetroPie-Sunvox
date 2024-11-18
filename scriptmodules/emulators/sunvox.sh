@@ -87,7 +87,7 @@ readonly DIALOG_OK=0
 readonly DIALOG_CANCEL=1
 readonly DIALOG_EXTRA=3
 readonly DIALOG_ESC=255
-readonly DIALOG_BACKTITLE="Sunvox Engine Configuration (v$SCRIPT_VERSION)"
+readonly DIALOG_BACKTITLE="Sunvox Configuration (v$SCRIPT_VERSION)"
 readonly DIALOG_HEIGHT=8
 readonly DIALOG_WIDTH=60
 
