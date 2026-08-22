@@ -77,7 +77,7 @@ SETTINGS_CFG_FILE="$SETTINGS_DIR/sunvox-settings.cfg"
 
 X11_FLAG="false"
 
-if [[ -n "$(echo $DISPLAY)" ]]; then
+if [[ -n "$(echo "$DISPLAY")" ]]; then
     X11_FLAG="true"
 fi
 
@@ -463,7 +463,7 @@ function _install_themes_dialog() {
         if [[ -n "$choice" ]]; then
             local theme="${themes[choice - 1]}"
 
-            if [[ "${options[choice * 2 - 1]}" =~ "(installed)" ]]; then
+            if [[ "${options[choice * 2 - 1]}" =~ (installed) ]]; then
                 _update_uninstall_themes_dialog "$theme"
             else
                 if [[ ! -d "$ES_THEMES_DIR/$theme" ]]; then
@@ -730,7 +730,7 @@ function configure_sunvox() {
         # Get the version from the file name.
         version="${bin_files[$index]}"
         # Cut between "_".
-        version="$(echo $version | cut -d'_' -f 2)"
+        version="$(echo "$version" | cut -d'_' -f 2)"
 
         if [[ "$version" == "2.1.6" ]]; then
             audio_driver_string="-ad"
