@@ -1,6 +1,6 @@
 # RetroPie Sunvox Engine "Emulator"
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/itsdarklikehell/RetroPie-Sunvox?style=flat-square) ![GitHub license](https://img.shields.io/github/license/itsdarklikehell/cross-compile-sunvox-raspberry-pi?style=flat-square)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/itsdarklikehell/RetroPie-Sunvox?style=flat-square) ![GitHub license](https://img.shields.io/github/license/itsdarklikehell/RetroPie-Sunvox?style=flat-square)
 
 A scriptmodule to install a Sunvox "emulator" for RetroPie.
 
@@ -92,7 +92,7 @@ The script installs the latest versions of Sunvox:
 
 - `2.1.2`
 
-A new `sunvox` folder will be created in `~/RetroPie/roms`, where you can [install the Sunvox games](#how-to-install-sunvox-games) using the `.sunvox` and `.zip` extensions.
+A new `sunvox` folder will be created in `~/RetroPie/roms`, where you can install your Sunvox projects using the `.sunvox` and `.zip` extensions.
 
 ## Uninstall the Sunvox "emulator" from RetroPie-Setup
 
