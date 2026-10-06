@@ -11,6 +11,7 @@
 
 # Scriptmodule variables ############################
 
+set -euo pipefail
 rp_module_id="sunvox"
 rp_module_desc="Sunvox Engine (https://warmplace.ru/soft/sunvox/)."
 rp_module_help="Game extensions: .sunvox .zip."
@@ -152,6 +153,7 @@ function _main_config_dialog() {
 
     if [[ "$return_value" -eq "$DIALOG_OK" ]]; then
         if [[ -n "$choice" ]]; then
+            # shellcheck disable=SC2206
             eval "${commands[choice * 2 - 1]}"
         fi
     fi

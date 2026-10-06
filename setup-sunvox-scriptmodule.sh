@@ -13,10 +13,11 @@
 
 # Globals ####################################################################
 
+set -euo pipefail
 user="$SUDO_USER"
 [[ -z "$user" ]] && user="$(id -un)"
 
-home="$(eval echo ~$user)"
+home="$(getent passwd "$user" | cut -d: -f6)"
 
 readonly RP_DIR="$home/RetroPie"
 readonly RP_ROMS_DIR="$RP_DIR/roms"
